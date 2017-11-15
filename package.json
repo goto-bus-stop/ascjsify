@@ -1,0 +1,37 @@
+{
+  "name": "ascjsify",
+  "description": "fast browserify transform for ES modules, and nothing else--using @WebReflection `ascjs`",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/ascjsify/issues"
+  },
+  "dependencies": {
+    "ascjs": "^2.4.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/ascjsify",
+  "keywords": [
+    "ascjs",
+    "browserify",
+    "browserify-transform",
+    "es",
+    "modules",
+    "es-modules",
+    "transform",
+    "import",
+    "export"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/ascjsify.git"
+  },
+  "scripts": {
+    "test": "standard && tape test/*.js"
+  }
+}
