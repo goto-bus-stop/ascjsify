@@ -35,6 +35,20 @@ b.transform(ascjsify, { global: true })
 `global: true` is optional, but useful if dependencies may be using ES modules already.
 `ascjsify` only runs on files that look like they may contain `import` or `export` statements, so it won't slow everything down when run globally.
 
+### Input
+
+```js
+import { EventEmitter } from 'events'
+export default new EventEmitter()
+```
+
+### Output
+
+```js
+const { EventEmitter } = require('events')
+Object.defineProperty(exports, '__esModule', {value: true}).default = new EventEmitter()
+```
+
 ## License
 
 [Apache-2.0](LICENSE.md)
